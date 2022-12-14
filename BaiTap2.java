@@ -176,9 +176,41 @@ public class BaiTap2 {
                     break;
             }
             //------------------------------------
+
             switch (number % 100 / 10){
-                case 2:
-                    variableNumber2 = " twenty ";
+                case 1:
+                    switch (number % 100 % 10){
+                        case 1:
+                            variableNumber2 = "elven ";
+                            break;
+                        case 2:
+                            variableNumber2 = "twelve ";
+                            break;
+                        case 3:
+                            variableNumber2 = "thirteen ";
+                            break;
+                        case 4:
+                            variableNumber2 = "fourteen ";
+                            break;
+                        case 5:
+                            variableNumber2 = "fifteen ";
+                            break;
+                        case 6:
+                            variableNumber2 = "sixteen ";
+                            break;
+                        case 7:
+                            variableNumber2 = "seventeen ";
+                            break;
+                        case 8:
+                            variableNumber2 = "eighteen ";
+                            break;
+                        case 9:
+                            variableNumber2 = "nineteen ";
+                            break;
+                    }
+                    break;
+               case 2:
+                    variableNumber2 = "twenty ";
                     break;
                 case 3:
                     variableNumber2 = "thirty ";
@@ -232,7 +264,16 @@ public class BaiTap2 {
                     variableNumber3 = "nine";
                     break;
             }
-            System.out.println(variableNumber1 + variableNumber2 + variableNumber3);
+           if (number % 100 / 10 == 1)
+           {
+               System.out.println(variableNumber1 + variableNumber2);
+           }
+           else {
+               System.out.println( variableNumber1 + variableNumber2 + variableNumber3 );
+           }
+
+
+
 
         }
     }
