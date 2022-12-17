@@ -7,7 +7,7 @@ public class CacLoaiHInh {
         System.out.println(
                 "Please select the image you want to print:\n" +
                         "1. Print the rectangle\n" +
-                        "2. Print the square triangle (The corner is square at 4 different angles: top-left, top-right, botton-left, botton-right)\n" +
+                        "2. Print the square triangle\n" +
                         "3. Print isosceles triangle\n" +
                         "4. Exit"
         );
